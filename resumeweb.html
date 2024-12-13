@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background: #35424a;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    nav {
+        background: #35424a;
+        color: #ffffff;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 20px;
+        background: #ffffff;
+        border-radius: 5px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #35424a;
+        color: #ffffff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+</style>
+<script>document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});</script>
+</head>
+<body>
+    <header>
+        <h1>Nabeel Irshadahmed Soudagar</h1>
+        <p>Student</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="bio">
+        <h2>Bio</h2>
+        <p>Hello i am Nabeel soudagar from belagavi.I am a computer science engineering student...</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+       
+        <h3>Education</h3>
+        <ul>
+            <li>87% in 10 from Islamiya high school camp belagavi</li>
+            <li>70% in 12 from Islamiya P U college camp belagavi</li>
+            <li>Bachelor of Science in Computer Science, University of SGBIT(2022 - 2026)</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Contact: nabeelsoudagar1050@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
